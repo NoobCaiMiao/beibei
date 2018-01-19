@@ -67,12 +67,13 @@ body {
   overflow-y: hidden; }
 
 .fixed-nav {
-  display: none;
   width: 100%;
   position: fixed;
   height: 78px;
   border-bottom: 2px solid #ff426c;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  z-index: 999;
+  top: 0; }
   .fixed-nav .comwidth {
     height: 78px; }
     .fixed-nav .comwidth > a {
@@ -114,6 +115,16 @@ body {
     bottom: 12px;
     font-size: 16px;
     color: #fd7b7b; }
+  .section .download {
+    height: 120px;
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    right: 160px; }
+    .section .download a {
+      display: block;
+      height: 100%;
+      width: 100%; }
 
 .section:nth-child(1) {
   background: url("http://h0.hucdn.com/open/201641/fad619fcea10d44f_1920x900.png") no-repeat center center; }

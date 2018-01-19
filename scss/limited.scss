@@ -65,21 +65,7 @@ body{
                 display: none;
             }
         }
-//      .small:hover{
-//          width: 85px;
-//          line-height: 20px;
-//          margin-left: 9px;
-//          margin-top: 3px;
-//          border: 1px solid #999;
-//          text-align: center;
-//          margin-right: 0;
-//          background: #ffffff;
-//          span{
-//              display: block;
-//              line-height: 20px;
-//              padding-right: 12px;
-//          }
-//      }
+
         li{
             float: left;
             margin-left: 12px;
@@ -420,7 +406,6 @@ body{
                 .search-info{
                     display: none;
                     width: 210px;
-//                  height: 182px;
                     border: 1px solid #F9F9F9 ;
                     position: absolute;
                     left: 0;
@@ -466,18 +451,24 @@ body{
         li{
             float: left;
             height: 100%;
-            width: 56px;
+            width: 62px;
             a{
+                margin-top: 9px;
                 float: left;
+                height: 20px;
                 padding: 0 10px;
-                line-height: 27px;
+                line-height: 20px;
                 font-size: 12px;
-                color: #999;
-                border-bottom: 3px solid transparent;
+                color: #3E3E3E;
             }
             a:hover{
-                border-bottom: 3px solid #FF697F;
+                background: #ff4965;
+                color: #fff;
             }
+        }
+        li:nth-child(2) a{
+            background: #ff4965;
+            color: #fff;
         }
         .seg{
             height: 21px;
@@ -550,73 +541,12 @@ body{
     }
 }
 .carousel{
-    height: 320px;
-    background: #ff647c;
+    height: 275px;
+    background: #f9f9f9;
     cursor: pointer;
     .comwidth{
         height: 100%;
         position: relative;
-        a{  
-            display: block;
-            position: absolute;
-            top: 0;
-            margin-left: -160px;
-            height: 100%;
-            img{
-                outline: none;
-                height: 100%;
-            }
-        }
-        .carousel-tag{
-            position: absolute;
-            width: 250px;
-            height: 318px;
-            right: 0;
-            top: 1px;
-            background: #FFFFFF;
-            opacity: 0.95;
-            z-index: 0;
-            a{
-                position: static;
-                height: auto;
-                float: left;
-                margin: 0;
-                border-right: 1px solid #ddd;
-                border-bottom: 1px solid #ddd;
-                dl{
-                    height: 156px;
-                    width: 122px;
-                    padding: 1px;
-                    position: relative;
-                    img{
-                        height: 90px;
-                        width: 90px;
-                        margin: 26px 15px 2px;
-                    }
-                    dd{
-                        font-size: 13px;
-                        width: 94px;
-                        text-align: center;
-                        height: 20px;
-                        line-height: 20px;
-                        color: #7f7f7f;
-                        margin: 0 auto;
-                    }
-                    .limit-price{
-                        position: absolute;
-                        top: 12px;
-                        border-radius: 50%;
-                        height: 36px;
-                        width: 36px;
-                        color: #fff;
-                        line-height: 36px;
-                        text-align: center;
-                        left: 62px;
-                        background: url("http://b0.hucdn.com/img/welcome/i_icon3.png") no-repeat -53px -33px;
-                    }
-                }
-            }
-        }
     }
 }
 .container{
@@ -624,282 +554,320 @@ body{
     min-height: 1000px;
     .comwidth{
         position: relative;
-    }
-    .content-right{
-        width: 250px;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        z-index: 1;
-        .m-brand{
-            height: 360px;
-            background: #FFFFFF;
-            width: 248px;
-            border: 1px solid #e7e7e7;
-            overflow: hidden;
-            position: relative;
-            .brand-top{
-                height: 39px;
-                width: 248px;
-                li:nth-child(1) a{
-                        border-bottom: 2px solid #ff647c;
+        .time-line{
+            height: 76px;
+            width: 100%;
+            margin-bottom: 20px;
+            background: url("http://b0.hucdn.com/img/tuan/bg_line.png") no-repeat center center;
+            .po-re{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                .now{
+                    margin-left: 20px;
+                    cursor: pointer;
+                    height: 100%;
+                    width: 690px;
+                    .shape-l{
+                        position: relative;
+                        height: 100%;
+                        width: 213px;
+                        background:url("http://b0.hucdn.com/img/tuan/i_map.png") no-repeat -1px -246px;
+                        .time-pic{
+                            height: 62px;
+                            width: 62px;
+                            position: absolute;
+                            left: 7px;
+                            top: 7px;
+                            background: url("http://b0.hucdn.com/img/tuan/i_map.png") no-repeat -88px -144px;
+                        } 
+                        .status{
+                            position: absolute;
+                            left: 80px;
+                            top: 11px;
+                            color: #FFFFFF;
+                            height: 30px;
+                            overflow: hidden;
+                            font-size: 17px;
+                        }
+                        .clock{
+                            position: absolute;
+                            left: 80px;
+                            top: 31px;
+                            height: 40px;
+                            color: #FFFFFF;
+                            font-size: 23px;
+                            overflow: hidden;
+                        }
                     }
-                li{
-                    float: left;
-                    width: 60px;
-                    height: 39px;
-                    padding: 0 32px;
-                    a{
-                        display: block;
+                    .shape-c{
+                        width: 320px;
+                        height: 100%;
+                        position: relative;
+                        background: url("http://b0.hucdn.com/img/tuan/i_repeatx.png") repeat-x;
+                        .this{
+                            position: absolute;
+                            width: 128px;
+                            left: -30px;
+                            top: 23px;
+                            color: #666;
+                            text-align: right;
+                            font-weight: 700;
+                            font-size: 20px;
+                        }
+                        .count-down{
+                            margin: 16px 0 0 110px;
+                            .timer-pic{
+                                height: 43px;
+                                width: 208px;
+                                background: url("http://b0.hucdn.com/img/tuan/i_map.png") no-repeat 0 0;
+                            }
+                        }
+                    }
+                    .shape-r{
+                        width: 35px;
+                        height: 100%;
+                        margin-right: 122px;
+                        background: url("http://b0.hucdn.com/img/tuan/i_map.png") no-repeat -179px -60px;
+                    }
+                }
+                .will{
+                    width: 233px;
+                    height: 100%;
+                    text-align-last: center;
+                    font-size: 12px;
+                    color: #48bc03;
+                    section{
+                        padding: 12px 0;
                         width: 60px;
                         height: 37px;
-                        line-height: 36px;
-                        font-size: 14px;
-                        color: #868686;
-                    }
-                    
-                    a:hover{
-                        font-weight: 700;
-                    }
-                }
-            }
-            .brand-center:nth-child(2){
-                z-index: 1; 
-            }
-            .brand-center{
-                position: absolute;
-                width: 250px;
-                background: #FFFFFF;
-                li{
-                    float: left;
-                    width: 124px;
-                    height: 56px;
-                    border-bottom: 1px dashed #f1f1f1;
-                    border-right: 1px dashed #f1f1f1;
-                    position: relative;
-                    img{
-                        padding: 8px 22px;
-                        width: 80px;
-                        height: 40px;
-                    }
-                    .bg{
-                        background: #000;
-                        opacity: 0.02;
-                        position: absolute;
-                        height: 100%;
-                        width: 100%;
-                        left: 0;
-                        top: 0;
-                        display: none;
+                        margin: 8px;
+                        margin-right: 165px;
+                        background: url("http://b0.hucdn.com/img/tuan/i_map.png") no-repeat -8px -65px;
+                        div{
+                            height: 18px;
+                            line-height: 22px;
+                        }
+                        .waati{
+                            font-size: 14px;
+                            margin-top: -2px;
+                        }
                     }
                 }
-                li:hover .bg{
-                    display: block;
-                }
-            }
-            .brand-bottom a{
-                font-size: 14px;
-                line-height: 30px;
-                color: #959595;
-                display: inline-block;
-                text-align: center;
-                width: 248px;
-                background: #FFFFFF;
-            }
-        }
-        .hot-sort{
-            margin-top: 15px;
-            width: 250px;
-            .hot-sort-title span{
-                font-size: 16px;
-                line-height: 24px;
-                color: #666666;
-                padding-left: 25px;
-                background: url("http://b0.hucdn.com/img/welcome/i_icon3.png") no-repeat -180px 2px;
-            }
-            .hot-sort-content{
-                margin-top: 5px;
-                width: 248px;
-                border: 1px solid #e7e7e7;
-                ul li{
-                    float: left;
+                .last{
+                    height: 100%;
                     text-align: center;
-                    border-right: 1px solid #dbdbdb;
-                    border-bottom: 1px solid #dbdbdb;
-                    width: 61px;
-                    height: 31px;
-                    line-height: 30px;
-                }
-                ul li:nth-child(4){
-                    border-right: 0;
-                }
-                a{
-                    display: block;
-                    width: 228px;
-                    height: 70px;
-                    padding: 10px;
-                    color: #3e3e3e;
-                    border-bottom: 1px solid #F1F1F1;
-                    background: #FFFFFF;
-                    img{
-                        width: 70px;
-                        height: 70px;
-                        float: left;
+                    color: #48bc03;
+                    
+                    section{
+                        padding: 12px 0;
+                        width: 60px;
+                        height: 37px;
+                        margin: 8px;
+                        margin-right: 0px;
+                        background: url("http://b0.hucdn.com/img/tuan/i_map.png") no-repeat -8px -65px;
+                        div{
+                            height: 18px;
+                            line-height: 22px;
+                            font-size: 12px;
+                        }
+                        .waati{
+                            font-size: 14px;
+                            margin-top: -2px;
+                        }
                     }
-                    .m-title{
-                        float: left;
-                        width: 143px;
-                        height: 36px;
-                        margin-left: 10px;
-                        overflow: hidden;
-                        font-size: 12px;
-                        line-height: 18px;
-                    }
-                    .m-price{
-                         float: left;
-                         width: 143px;
-                         height: 21px;
-                         margin-left: 10px;
-                         line-height: 21px;
-                         color: #ff5482;
-                         b{
-                             font-size: 12px;
-                         }
-                         em{
-                             font-size: 14px;
-                             font-weight: 700;
-                         }
-                         i{
-                             font-size: 12px;
-                             color: #a5a5a5;
-                             margin-left: 5px;
-                             text-decoration: line-through;
-                         }
-                     }
                 }
             }
         }
-    }
-    .con-title{
-        height: 30px;
-        padding: 20px 0 10px ;
-        width: 100%;
-        color: #666;
-        position: relative;
-        #title-left{
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 30px;
-        }
-        #title-dotted{
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 30px;
-        }
-        #title-center{
-            font-size: 20px;
-            line-height: 30px;
-        }
-        #title-right{
-            position: absolute;
-            right: 272px;
-            top: 30px;
-            color: #999;
-            font-size: 12px;
-            a{
-                color: #4bc1d2;
-                font-size: 12px;
+        .move-line{
+            width: 100%;
+            height: 0px;
+            border-bottom: 2px solid #ff4965;
+            position: relative;
+            span{
+                position: absolute;
+                height: 0;
+                width: 0;
+                border-bottom: 6px #FF4965 solid;
+                border-left: 6px transparent solid;
+                border-right: 6px transparent solid;
+                top: -6px;
+                left: 52px;
             }
         }
-    }
-    .container-box{
-        width: 762px;
-        height: 286px;
-        padding: 20px;
-        background: #FFFFFF;
-        box-shadow: 0 0 3px #eee;
-        margin-bottom: 15px;
-        .container-brand-info{
-            height: 50px;
+        .nav-wrap{
+            line-height: 45px;
+            height: 43px;
             width: 100%;
             position: relative;
-            img{
-                float: left;
-                width: 48px;
-                height: 48px;
-                border: 1px solid #ddd;
-                border-radius: 6px;
-            }
-            .brand-name{
-                font-size: 20px;
-                line-height: 24px;
-                margin-left: 60px;
-                margin-bottom: 6px;
-            }
-            span{
-                margin-left: 10px;
-                font-size: 14px;
-                line-height: 20px;
-                color: #8F8F8F;
-            }
-            .discount{
-                position: absolute;
-                right: 0;
-                top: 9px;
-                color: #ff4965;
-                border: 1px solid rgba(255,73,100,.4);
-                padding: 8px 11px;
-                border-radius: 100px;
-                font-size: 14px;
-                line-height: 16px;
-            }
-        }
-        .item-show{
-            margin-top: 20px;
-            width: 100%;
-            .item-detail:nth-child(4){
-                margin: 0;
-            }
-            .item-detail{
-                float: left;
-                margin-right: 29px;
-                img{
-                    width: 168px;
-                    height: 168px;
+            background: #fff;
+            ul{
+                height: 22px;
+                padding: 10px 0 10px 14px;
+                border: 1px solid #ececec;
+                border-top: 0;
+                .first-li{
+                    width: 0;
                 }
-                .price-info{
-                    width: 168px;
-                    height: 28px;
-                    span{
-                        color: #ff4965;
-                        line-height: 28px;
-                        font-weight: 700;
+                li{
+                    height: 22px;
+                    width: 44px;
+                    margin-right: 18px;
+                    float: left;
+                    a{
+                        height: 100%;
+                        width: 100%;
+                        display: block;
+                        text-align: center;
+                        color: #3E3E3E;
                         font-size: 12px;
+                        line-height: 22px;
                     }
-                    .now-price{
-                        font-size: 18px;
-                    }
-                    .old-price{
-                        font-weight: normal;
-                        color: #8F8F8F;
-                        text-decoration: line-through;
+                    a:hover{
+                        background: #ff4965;
+                        color: #fff;
                     }
                 }
-                .item-info{
-                    margin-top: 4px;
-                    color: #8F8F8F;
-                    font-size: 12px;
-                    width: 168px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
+                li:nth-child(2) a{
+                    background: #ff4965;
+                    color: #fff;
+                }
+            }
+            .shipping{
+                position: absolute;
+                left: 50%;
+                top: 0;
+                margin-left: 294px;
+                background: #f9f9f9;
+                width: 245px;
+                height: 22px;
+                padding: 10px 0;
+                span{
+                    position: relative;
+                    float: left;
+                    line-height: 22px;
+                    height: 22px;
+                    padding: 0 24px;
+                    border-right: 1px solid #ececec;
+                    div{
+                        width: 90px;
+                        height: 0;
+                        border: 2px solid #46bb00;
+                        position:absolute;
+                        top: 30px;
+                        left: 18px;
+                        display: none;
+                    }
+                    a{
+                        padding-left: 20px;
+                        font-size: 14px;
+                        color: #46bb00;
+                        background: url("http://b0.hucdn.com/img/tuan/i_map.png") no-repeat -11px -219px;
+                    }
+                }
+                span:hover div{
+                    display: block;
                 }
             }
         }
-        a{
-            height: 100%;
-            width: 100%;
-            display: block;
+        .main-cont{
+            width: 1080px;
+            overflow: hidden;
+            height: auto;
+            ul{
+                width: 1100px;
+                height: auto;
+                li{
+                    width: 253px;
+                    border: 1px solid #ececec;
+                    height: 320px;
+                    margin-right: 20px;
+                    margin-top: 20px;
+                    background: #fff;
+                    float: left;
+                    overflow: hidden;   
+                    transition: border .3s;
+                    cursor: pointer;
+                    a{
+                        img{
+                            height: 253px;
+                            width: 253px;
+                        }
+                    }
+                    .detail{
+                        width: 237px;
+                        height: 66px;
+                        padding: 0 8px;
+                        position: relative;
+                        .title{
+                            position: absolute;
+                            top: 7px;
+                            color: #666;
+                            height: 18px;
+                            width: 174px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            line-height: 20px;
+                        }
+                        .price{
+                            padding-top: 23px;
+                            .now-price{
+                                font-size: 20px;
+                                color: #fb4863;
+                                em{
+                                    font-size: 30px;
+                                    font-weight: 700;
+                                    font-family: Verdana,Helvetica,Tahoma,Arial,'Microsoft YaHei','微软雅黑',STXihei,'华文细黑',SimSun,'宋体',Heiti,'黑体',sans-serif;
+                                }
+                            }
+                            .old-price{
+                                font-size: 12px;
+                                color: #999;
+                                text-decoration: line-through;
+                            }
+                        }
+                        .other{
+                            width: 60px;
+                            height: 47px;
+                            position: absolute;
+                            right: 8px;
+                            top: 8px;
+                            border: 1px solid #ff4965;
+                            .other-info{
+                                height: 18px;
+                                position: relative;
+                                width: 100%;
+                                .statusbg{
+                                    width: 61%;
+                                    height: 18px;
+                                    background: #FFD1D9;
+                                }
+                                .statusval{
+                                    position: absolute;
+                                    height: 18px;
+                                    left: 20px;
+                                    top: 0px;
+                                    text-align: center;
+                                    color: #ff4965;
+                                }
+                            }
+                            .btn{
+                                background: #ff4965;
+                                height: 29px;
+                                width: 60px;
+                                color: #fff;
+                                font-size: 12px;
+                                text-align: center;
+                                line-height: 28px;
+                            }
+                        }
+                    }
+                }
+                li:hover{
+                    border-color: #ff4965;
+                }
+            }
         }
     }
     .more .comwidth{
@@ -909,13 +877,7 @@ body{
         background: #FFFFFF;
         font-weight: 700;
         cursor: pointer;
-    }
-    .pic{
-        margin-top: 50px;
-        img{
-            margin-left: -420px;
-        }
-        
+        margin-top: 20px;
     }
 }
 .footer{
@@ -1157,20 +1119,22 @@ body{
     height: 37px;
     box-shadow: 0 1px 5px #bbb;
     .fixed-sub-nav-logo{
-        width: 98px;
+        margin-left: -3px;
+        width: 97px;
         height: 48px;
         margin-right: 18px;
-        background: url("http://b0.hucdn.com/party/default/92788ffe070a9643a1bc1d8e2284b182.png") no-repeat;
+        background: url("http://b0.hucdn.com/img/tuan/fixed_tag.png") no-repeat;
         a{
             height: 100%;
             width: 100%;
         }
         a:hover{
             border: 0;
+            
         }
     }
     a{
-        line-height: 34px;
+        line-height: 20px;
     }
     .trailer-left{
         float: right;
@@ -1181,7 +1145,8 @@ body{
         line-height: 37px;
         background: #f7f7f7;
         a{
-            color: #ff506b;
+            margin-top: 0;
+            color: #46bb00;
             padding: 0;
             border: 0;
             width: 100%;
@@ -1189,13 +1154,16 @@ body{
             line-height: 34px;
             height: 37px;
         }
+        a:hover{
+            background: none;
+        }
         i{
             font-size: 14px;
             line-height: 16px;
             height: 16px;
             width: 16px;
             display: inline-block;
-            background: #ff506b;
+            background: transparent;
             border-radius: 2px;
             color: #FFFFFF;
         }
@@ -1211,22 +1179,28 @@ body{
         background: #f7f7f7;
         border-right: 1px solid #ddd;
         a{
+            margin-top: 0;
             padding: 0;
             border: 0;
             width: 100%;
             text-align: center;
-            color: #7f4dbc;
+            color: #46bb00;
             font-size: 15px;
             line-height: 34px;
             height: 37px;
         }
+        a:hover{
+            background: none;
+            border-bottom: 3px solid #46bb00;
+        }
         i{
+            margin-right: 1px;
             font-size: 13px;
-            line-height: 16px;
+            line-height: 14px;
             height: 16px;
             width: 16px;
             display: inline-block;
-            background: #7f4dbc;
+            background: #46bb00;
             border-radius: 2px;
             color: #FFFFFF;
         }

@@ -1,0 +1,360 @@
+.sub-nav{
+    .comwidth{
+        ul{
+           li{
+                width: auto;
+                margin-right: 12px;
+            }  
+        }
+    }
+}
+.carousel{
+    height: 260px;
+    .comwidth{
+        a{
+            margin: 0;
+            img{
+                height: 260px;
+                margin-left: -420px;
+            }
+        }
+    }
+}
+.container{
+    background: #F3F6FF;
+    .comwidth{
+        padding-top: 25px;
+        padding-bottom: 70px;
+        .more{
+            .comwidth{
+                padding: 0;
+            }
+        }
+        .today{
+            width: 100%;
+            height: 629px;
+            margin-bottom: 30px;
+            .con-title{
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                height: 31px;
+                background: url("http://b0.hucdn.com/party/default/3b9e5c1d9ebd5574b3aa8fee451c76f9_1081x201.png") no-repeat top;
+            }
+            .today-list{
+                height: 598px;
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                .today-list-left{
+                    float: left;
+                    height: 100%;
+                    width: 210px;
+                    .day{
+                        height: 448px;
+                        width: 100%;
+                        position: relative;
+                        background: url("http://b0.hucdn.com/party/default/5c076fa1639566881c02e23f34eea541_213x498.png") no-repeat center;
+                    }
+                    .night{
+                        position: relative;
+                        z-index: 2;
+                        box-shadow:  0 0 10px rgba(0,0,0,.5);
+                        height: 150px;
+                        background: url("http://b0.hucdn.com/party/default/373403c854691ee1b2cae144d63aedb4_213x150.png") no-repeat no-repeat 0 0;
+                    }
+                }
+                .today-list-right{
+                    float: right;
+                    height: 100%;
+                    width: 871px;
+                    height: 599px;
+                    position: absolute;
+                    left: 210px;
+                    top: 0;
+                    .todaywrap{
+                        background: #FFFFFF;
+                        height: 298px;
+                        width: 290px;
+                        float: left;
+                        position: relative; 
+                        padding-top: 1px;
+                        a{
+                            display: block;
+                            box-sizing: border-box;
+                            height: 100%;
+                            width: 100%;
+                            border-bottom: 1px solid #ececec; 
+                            border-right: 1px solid #ececec;
+                            >img{
+                                display: block;
+                                height: 210px;
+                                width: 210px;
+                                margin: 0 auto 21px;
+                            }
+                            .today-title{
+                                vertical-align: middle;
+                                height: 15dpx;
+                                line-height: 15px;
+                                color: #666666;
+                                font-size: 12px;
+                                margin-bottom: 15px;
+                                white-space: nowrap; 
+                                overflow: hidden;
+                                text-overflow: ellipsis;                               
+                                img{
+                                    display: inline-block;
+                                    margin: 0 3px 0 15px;
+                                    width: 30px;
+                                    height: 15px;
+                                    vertical-align: middle;
+                                }
+                            }
+                            .today-price{
+                                height: 26px;
+                                line-height: 26px;
+                                color: #ff4965;
+                                .rmb{
+                                    font-size: 20px;
+                                    margin: 0 2px 0 15px;
+                                }
+                                .int{
+                                    font-size: 26px;
+                                    font-weight: 700;
+                                    font-family: verdana;
+                                }
+                                .dotted{
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    font-family: verdana;
+                                    margin-left: 1px;
+                                }
+                                .old{
+                                    font-size: 12px;
+                                    color: #999999;
+                                    text-decoration: line-through;
+                                    margin-left: 5px;
+                                }
+                            }
+                            .today-count{
+                                position: absolute;
+                                top: 0;
+                                right: 1px;
+                                width: 35px;
+                                height: 37px;
+                                background: url("http://b0.hucdn.com/party/default/21e16417f55446b551a3fef6eeba72db_35x37.png") no-repeat no-repeat 0 0;
+                                .discountnum{
+                                    display: block;
+                                    font-family: verdana;
+                                    font-size: 16px;
+                                    text-align: center;
+                                    height: 1em;
+                                    line-height: 1em;
+                                    margin: 2px 0 1px;
+                                    color: #ffffff;
+                                    font-weight: 700;
+                                }
+                                .chinese{
+                                    height: 1em;
+                                    line-height: 1em;
+                                    color: #ffffff;
+                                    font-size: 12px;
+                                    display: block;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        a:hover{
+                            transition: box-shadow .2s ease-in-out 0s;
+                            box-shadow: 0 -6px 6px -2px rgba(130,85,220,.2) inset;
+                        }
+                    }
+                }
+            }
+        }
+        .sale-content{
+            width: 100%;
+            height: auto;
+            .sale-title{
+                height: 31px;
+                width: 100%;
+                margin-bottom: 20px;
+                background: url("http://b0.hucdn.com/party/default/3b9e5c1d9ebd5574b3aa8fee451c76f9_1081x201.png") no-repeat 0 -56px;
+            }
+            a{
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 285px;
+                border: 1px solid #ececec;
+                outline: none;
+                margin-bottom: 20px;
+                background: #FFFFFF;
+                >img{
+                    width: 610px;
+                    height: 285px;
+                }
+                .tim-content{
+                    height: 285px;
+                    width: 470px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    .tim-title{
+                        position: relative;
+                        height: 60px;
+                        margin: 0 20px;
+                        border-bottom: 1px dashed #efefef;
+                        img{
+                            position: absolute;
+                            left: 0;
+                            top: 15px;
+                            height: 30px;
+                            width: 53px;
+                        }
+                        .contry{
+                            position: absolute;
+                            margin-left: 63px;
+                            height: 30px;
+                            top: 15px;
+                            p{
+                                color: #999;
+                                font-size: 12px;
+                                height: 15px;margin: 0;
+                            }
+                            p:nth-child(2){
+                                font-size: 14px;
+                            }
+                        }
+                        .timer{
+                            font-size: 14px;
+                            color: #666666;
+                            position: absolute;
+                            top: 20px;
+                           right: 0;
+                        }
+                    }  
+                    .tim-center{
+                        height: 98px;
+                        margin: 0 20px;
+                        .tim-brand{
+                            height: 24px;
+                            font-size: 24px;
+                            line-height: 24px;
+                            width: 290px;
+                            overflow: hidden;
+                            margin-top: 30px;
+                            color: #3E3E3E;
+                        }
+                        .tim-promemo{
+                            font-size: 12px;
+                            line-height: 1.5em;
+                            color: #999999;
+                            max-height: 4.5em;
+                            overflow: hidden;
+                            margin-top: 20px;
+                        }
+                    }
+                    .tim-price{
+                        position: absolute;
+                        left: 20px;
+                        bottom: 34px;
+                        height: 30px;
+                        line-height: 30px;
+                        color: #ff4965;
+                        .Symbol{
+                            font-size: 20px;
+                        }
+                        .tim-int{
+                            font-family: verdana;
+                            font-size: 30px;
+                            font-weight: 700;
+                        }
+                        .tim-dotted{
+                            font-size: 20px;
+                        }
+                    }
+                    .tim-cait{
+                        background: #8255dc;
+                        position: absolute;
+                        right: 20px;
+                        bottom: 25px;
+                        width: 150px;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 14px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        font-weight: 700;
+                        border-radius: 3px;
+                    }
+                }
+            }
+            a:hover .tim-cait{
+                background: #5928bb;
+            }
+        }
+    }
+}
+#fixed-sub-nav{
+    .comwidth{
+        .fixed-sub-nav-logo{
+            background: url("http://b0.hucdn.com/party/default/upload_ba0f3b5a6c59e0146303e32a68ef583e_97x48.png") no-repeat;
+        }
+    }
+}
+.footer{
+    height: 134px;
+    background: #FFFFFF;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    ul{
+        width: 1000px;
+        margin: 0 auto;
+        height: 100%;
+        li{
+            float: left;
+            height: 114px;
+            width: 115px;
+            padding: 0 25px;
+            margin-top: 20px;
+            div{
+                height: 40px;
+                width: 40px;
+                margin-bottom: 10px;
+            }
+            .bg1{
+                background: url("http://b1.hucdn.com/upload/prom/1501/20/38212264786895_310x38.png") no-repeat 0 0 ;
+            }
+            .fi-title{
+                color: #323232;
+                font-size: 14px;
+                line-height: 2em;
+                height: 2em;
+            }
+            .fi-memo{
+                color: #9c9c9c;
+                font-size: 12px;
+            }
+            .bg2{
+                background: url("http://b1.hucdn.com/upload/prom/1501/20/38212264786895_310x38.png") no-repeat -53px 0 ;
+            }
+            .bg3{
+                background: url("http://b1.hucdn.com/upload/prom/1501/20/38212264786895_310x38.png") no-repeat -108px 0 ;
+            }
+            .bg4{
+                background: url("http://b1.hucdn.com/upload/prom/1501/20/38212264786895_310x38.png") no-repeat -163px 0 ;
+            }
+            .bg5{
+                background: url("http://b1.hucdn.com/upload/prom/1501/20/38212264786895_310x38.png") no-repeat -218px 0 ;
+            }
+            .bg6{
+                background: url("http://b1.hucdn.com/upload/prom/1501/20/38212264786895_310x38.png") no-repeat -273px 0 ;
+            }
+        }
+    }
+}
+.root{
+    height: 52px;
+}

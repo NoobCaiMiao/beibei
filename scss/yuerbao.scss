@@ -10,14 +10,15 @@ body {
     overflow-y:hidden;
 
 }
-     
+       
 .fixed-nav{
-    display: none;
     width: 100%;  
     position: fixed;
     height: 78px;
     border-bottom: 2px solid #ff426c;
     background: #FFFFFF;
+    z-index: 999;
+    top: 0;
     .comwidth{
         height: 78px;
         >a{
@@ -68,6 +69,18 @@ body {
         font-size: 16px;
         color: #fd7b7b;
     }
+    .download{
+        height: 120px;
+        width: 320px;
+        position: absolute;
+        top: 50%;
+        right: 160px;
+        a{
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+     }
 }
 // 将背景颜色值定义成变量
 $red : url("http://h0.hucdn.com/open/201641/fad619fcea10d44f_1920x900.png") no-repeat center center;
@@ -131,5 +144,4 @@ $bgcolorlist:$red $red $orange $yellow $green $bluegreen $blue ;
             margin-left: -5px;
         }
     }
-    
 }
