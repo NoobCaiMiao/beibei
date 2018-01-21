@@ -1,0 +1,9 @@
+requirejs.config({
+	paths:{
+		"jquery":"scripts/jquery-3.2.1",
+		"cookie":"scripts/jquery.cookie",
+		"magn":"scripts/magn",
+		"map":"scripts/map",
+		"verification":"scripts/verification"
+	}
+})
