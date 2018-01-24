@@ -44,6 +44,41 @@ head购物车     已完成
 ###limited.html
 有个稍稍复杂的倒计时  已完成
 
+Nginx   配置文件
+
+
+
+server {
+        listen       81;
+        server_name  localhost;
+        # root D:/root/;
+        #charset koi8-r;
+        #access_log  logs/host.access.log  main;
+       location / {
+            root   html/project/;
+            index  index.html index.htm;
+       }
+
+       location = /sina{
+          proxy_pass http://www.sina.com.cn;
+       }
+
+       location = /baidu {
+	       	proxy_pass https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=nihao;
+       }
+       location = /zcool{
+       		proxy_pass http://www.zcool.com.cn/recommend/contentRecommend;
+       }
+       location = /beibei{
+       		proxy_pass http://sapi.beibei.com/item/category-100.html;
+       }
+       location = /beibeiSearch{
+       		proxy_pass http://api.beibei.com/mroute.html;
+       }
+       location = /beibeiPaging{
+       		proxy_pass http://www.beibei.com/rate/get/25859918-3-0.html;
+       }
+}
 
 
 
