@@ -1,5 +1,5 @@
 require(["scripts/config.js"],function(){
-	require(["jquery","over","overnav","overGoodsCarTop","tab","search","scroll","sidePanel","brand"],function($,over,overnav,overGoodsCarTop,tab,search,scroll,sidepanel,brand){
+	require(["jquery","over","overnav","overGoodsCarTop","tab","search","scroll","sidePanel","brand","pull","foodscar"],function($,over,overnav,overGoodsCarTop,tab,search,scroll,sidepanel,brand,pull,foodscar){
 		over.init();
 		overnav.init();
 //		console.log(overGoodsCarTop)
@@ -13,6 +13,8 @@ require(["scripts/config.js"],function(){
 		search.init();
 		scroll.init();
 		sidepanel.init();
-		brand.init()
+		brand.init();
+		pull.init();
+		foodscar.init()
 	})
 })

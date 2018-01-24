@@ -219,7 +219,6 @@ body {
       .head .comwidth .shoppingcar .shoppingsettle {
         display: none;
         width: 340px;
-        height: 208px;
         border: 1px solid #ff5482;
         position: absolute;
         right: 0;
@@ -227,14 +226,79 @@ body {
         background: #FFFFFF;
         z-index: 1; }
         .head .comwidth .shoppingcar .shoppingsettle .cartop {
-          height: 160px;
           width: 340px; }
           .head .comwidth .shoppingcar .shoppingsettle .cartop .wrap {
+            height: 160px;
             color: #99918c;
             height: 160px;
             line-height: 160px;
             text-align: center;
             font-size: 16px; }
+          .head .comwidth .shoppingcar .shoppingsettle .cartop ul {
+            width: 100%;
+            max-height: 424px;
+            background: white;
+            overflow-y: hidden;
+            overflow: hidden; }
+            .head .comwidth .shoppingcar .shoppingsettle .cartop ul li {
+              display: list-item;
+              padding: 12px;
+              list-style: none;
+              position: relative;
+              overflow: hidden;
+              height: 60px;
+              border-bottom: none; }
+              .head .comwidth .shoppingcar .shoppingsettle .cartop ul li a:nth-child(1) {
+                padding: 0; }
+              .head .comwidth .shoppingcar .shoppingsettle .cartop ul li a:nth-child(2) {
+                position: absolute;
+                left: 0px;
+                top: 15px;
+                padding: 0px 10px 0px 80px;
+                line-height: 1.2em;
+                height: 30px;
+                overflow: hidden;
+                font-size: 13px;
+                margin: 0px;
+                width: 50%;
+                z-index: 3;
+                color: #000000; }
+              .head .comwidth .shoppingcar .shoppingsettle .cartop ul li img {
+                border: 2px solid #cccccc;
+                background: white;
+                padding: 2px;
+                width: 50px;
+                height: 50px;
+                position: relative;
+                z-index: 4; }
+              .head .comwidth .shoppingcar .shoppingsettle .cartop ul li p:nth-child(3) {
+                position: absolute;
+                color: #aaaaaa;
+                left: 0px;
+                top: 52px;
+                padding: 0px 10px 0px 80px;
+                line-height: 1.2em;
+                height: 14px;
+                overflow: hidden;
+                font-size: 12px;
+                margin: 0px;
+                width: 50%; }
+              .head .comwidth .shoppingcar .shoppingsettle .cartop ul li p:nth-child(4) {
+                position: absolute;
+                color: #ff5482;
+                right: 15px;
+                top: 25px;
+                overflow: hidden;
+                font-size: 16px;
+                padding-left: 80px;
+                margin: 0px;
+                width: 30%;
+                line-height: 1em;
+                text-align: right; }
+                .head .comwidth .shoppingcar .shoppingsettle .cartop ul li p:nth-child(4) span {
+                  display: inline;
+                  color: #888888;
+                  font-size: 13px; }
         .head .comwidth .shoppingcar .shoppingsettle .carbottom {
           height: 47px;
           border-top: 1px solid #e3e3e3;
@@ -250,6 +314,7 @@ body {
               color: #e53363;
               line-height: 27px; }
           .head .comwidth .shoppingcar .shoppingsettle .carbottom button {
+            cursor: pointer;
             height: 35px;
             padding: 4px 12px;
             float: right;
@@ -715,13 +780,17 @@ body {
       .container .con-title #title-right a {
         color: #4bc1d2;
         font-size: 12px; }
+  .container .container-box:hover {
+    -webkit-box-shadow: 0 0 4px #ddd;
+    border-color: #e0e0e0; }
   .container .container-box {
     width: 762px;
     height: 286px;
     padding: 20px;
     background: #FFFFFF;
     box-shadow: 0 0 3px #eee;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    border: 1px solid #ececec; }
     .container .container-box .container-brand-info {
       height: 50px;
       width: 100%;
@@ -945,20 +1014,83 @@ body {
     opacity: 1;
     position: absolute;
     width: 350px;
-    height: 240px;
+    height: auto;
     border: 1px solid #ff5482;
     left: -350px;
-    top: -98px;
+    bottom: -50px;
     background: #FFFFFF; }
     .side-panel .fixed-cart .fixed-cart-center {
-      height: 160px;
+      max-height: 424px;
       width: 350px; }
       .side-panel .fixed-cart .fixed-cart-center .wrap {
+        height: 160px;
         color: #99918c;
         height: 160px;
         line-height: 160px;
         text-align: center;
         font-size: 16px; }
+      .side-panel .fixed-cart .fixed-cart-center ul {
+        width: 100%;
+        max-height: 424px;
+        background: white;
+        overflow-y: hidden;
+        overflow: hidden; }
+        .side-panel .fixed-cart .fixed-cart-center ul li {
+          display: list-item;
+          padding: 12px;
+          list-style: none;
+          position: relative;
+          overflow: hidden;
+          height: 60px;
+          border-bottom: none; }
+          .side-panel .fixed-cart .fixed-cart-center ul li a:nth-child(2) {
+            position: absolute;
+            left: 0px;
+            top: 15px;
+            padding: 0px 10px 0px 80px;
+            line-height: 1.2em;
+            height: 30px;
+            overflow: hidden;
+            font-size: 13px;
+            margin: 0px;
+            width: 50%;
+            z-index: 3; }
+          .side-panel .fixed-cart .fixed-cart-center ul li img {
+            border: 2px solid #cccccc;
+            background: white;
+            padding: 2px;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            z-index: 4; }
+          .side-panel .fixed-cart .fixed-cart-center ul li p:nth-child(3) {
+            position: absolute;
+            color: #aaaaaa;
+            left: 0px;
+            top: 52px;
+            padding: 0px 10px 0px 80px;
+            line-height: 1.2em;
+            height: 14px;
+            overflow: hidden;
+            font-size: 12px;
+            margin: 0px;
+            width: 50%; }
+          .side-panel .fixed-cart .fixed-cart-center ul li p:nth-child(4) {
+            position: absolute;
+            color: #ff5482;
+            right: 15px;
+            top: 25px;
+            overflow: hidden;
+            font-size: 16px;
+            padding-left: 80px;
+            margin: 0px;
+            width: 30%;
+            line-height: 1em;
+            text-align: right; }
+            .side-panel .fixed-cart .fixed-cart-center ul li p:nth-child(4) span {
+              display: inline;
+              color: #888888;
+              font-size: 13px; }
     .side-panel .fixed-cart .fixed-cart-bottom {
       height: 47px;
       border-top: 1px solid #e3e3e3;
@@ -974,6 +1106,7 @@ body {
           color: #e53363;
           line-height: 27px; }
       .side-panel .fixed-cart .fixed-cart-bottom button {
+        cursor: pointer;
         height: 35px;
         padding: 4px 12px;
         float: right;

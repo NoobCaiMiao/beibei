@@ -16,7 +16,18 @@ define(["jquery"],function($){
 			this.$kfzx.on("mouseout",this.Kfzx)
 			this.$elevator.on("mouseout",this.Elevator)
 			this.$elevator.on("click",this.Elevators)
-			
+			$(".fixed-cart").on("mouseover",$.proxy(this.cm,this))
+			$(".fixed-cart").on("mouseout",$.proxy(this.cmd,this))
+		}
+		cm(){
+			$(".fixed-cart").css({
+				display:"block"
+			})
+		}
+		cmd(){
+			$(".fixed-cart").css({
+				display:"none"
+			})
 		}
 		Elevators(){
 			$(window).scrollTop(0)

@@ -45,7 +45,7 @@ define(["jquery"],function($){
 				$(target).parent().removeClass("hover")
 			}else{
 				this.$cm.removeClass("hover")
-				console.log(2)
+//				console.log(2)
 				this.$cm.each(function(index,item){
 					$(item).css({
 						border:"1px solid #b8b7bd;",

@@ -4,6 +4,20 @@ requirejs.config({
 		"cookie":"scripts/jquery.cookie",
 		"magn":"scripts/magn",
 		"map":"scripts/map",
-		"verification":"scripts/verification"
+		"verification":"scripts/verification",
+		"num":"scripts/detailnum",
+		"val":"scripts/validation",
+		"form":"scripts/form",
+		"scroll":"scripts/magnscroll",
+		"paging":"scripts/paging",
+		"over":"scripts/over",
+		"overnav":"scripts/overnav",
+		"overGoodsCarTop":"scripts/overGoodsCarTop",
+		"tab":"scripts/tab",
+		"search":"scripts/search",
+		"scroll":"scripts/scroll",
+		"sidePanel":"scripts/sidePanel",
+		"brand":"scripts/brand",
+		"foodscar":"scripts/foodscar"
 	}
 })

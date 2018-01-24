@@ -23,6 +23,16 @@ gulp.task("html",()=>{
 			 	.pipe(connect.reload());//自动刷新;
 })
 
+gulp.task("json",()=>{
+	return gulp
+				//.src(["html/*.html"])
+				//.src(["html/*"])
+				//.src(["html/**/*"])
+				.src(["json/*.txt"])
+			 	.pipe(gulp.dest("dist/json"))
+			 	.pipe(connect.reload());//自动刷新;
+})
+
 gulp.task("script",()=>{
 	return gulp
 				.src(["src/*.js","model/*.js","libs/*.js","!src/secret.js","libs/*.js"])
@@ -39,6 +49,7 @@ gulp.task("script",()=>{
 //自动检测执行;
 //gulp.watch()
 gulp.task("watch",()=>{
+	gulp.watch(["json/*.txt"],["json"])
 	gulp.watch(["**/*.html","*/*.js","!module/**/*"],["script","html"])
 //	gulp.watch(["**/*.html","!module/**/*"],["html"]);
 //	gulp.watch(["*/*.js","!module/**/*","!es6/*"],["script"]);

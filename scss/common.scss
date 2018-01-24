@@ -226,7 +226,7 @@ body{
             .shoppingsettle{
                 display: none;
                 width: 340px;
-                height: 208px;
+//              height: 208px;
                 border: 1px solid rgb(255, 84, 130);
                 position: absolute;
                 right: 0;
@@ -234,10 +234,84 @@ body{
                 background: #FFFFFF;
                 z-index: 1;
                 .cartop{
-                    height: 160px;
+//                  height: 160px;
                     width: 340px;
                     .wrap{
+                        height: 160px;
                         @include goods;
+                    }
+                    ul{
+                        width: 100%;
+                        max-height: 424px;
+                        background: rgb(255, 255, 255);
+                        overflow-y: hidden;
+                        overflow: hidden;
+                        li{
+                            display: list-item;
+                            padding: 12px;
+                            list-style: none;
+                            position: relative;
+                            overflow: hidden;
+                            height: 60px;
+                            border-bottom: none;
+                            a:nth-child(1){
+                                padding: 0;
+                            }
+                            a:nth-child(2){
+                                position: absolute;
+                                left: 0px;
+                                top: 15px;
+                                padding: 0px 10px 0px 80px;
+                                line-height: 1.2em;
+                                height: 30px;
+                                overflow: hidden;
+                                font-size: 13px;
+                                margin: 0px;
+                                width: 50%;
+                                z-index: 3;
+                                color: #000000;
+                            }
+                            img{
+                                border: 2px solid rgb(204, 204, 204);
+                                background: rgb(255, 255, 255);
+                                padding: 2px;
+                                width: 50px;
+                                height: 50px;
+                                position: relative;
+                                z-index: 4;
+                            }
+                            p:nth-child(3){
+                                position: absolute;
+                                color: rgb(170, 170, 170);
+                                left: 0px;
+                                top: 52px;
+                                padding: 0px 10px 0px 80px;
+                                line-height: 1.2em;
+                                height: 14px;
+                                overflow: hidden;
+                                font-size: 12px;
+                                margin: 0px;
+                                width: 50%;
+                            }
+                            p:nth-child(4){
+                                position: absolute;
+                                color: rgb(255, 84, 130);
+                                right: 15px;
+                                top: 25px;
+                                overflow: hidden;
+                                font-size: 16px;
+                                padding-left: 80px;
+                                margin: 0px;
+                                width: 30%;
+                                line-height: 1em;
+                                text-align: right;
+                                span{
+                                    display: inline;
+                                    color: rgb(136, 136, 136);
+                                    font-size: 13px;
+                                }
+                            }
+                        }
                     }
                 }
                 .carbottom{
@@ -257,6 +331,7 @@ body{
                         }
                     }
                     button{
+                        cursor: pointer;
                         @include btn;
                         i{
                             font-size: 16px;
@@ -812,6 +887,10 @@ body{
             }
         }
     }
+    .container-box:hover{
+        -webkit-box-shadow: 0 0 4px #ddd;
+        border-color: #e0e0e0;
+    }
     .container-box{
         width: 762px;
         height: 286px;
@@ -819,6 +898,7 @@ body{
         background: #FFFFFF;
         box-shadow: 0 0 3px #eee;
         margin-bottom: 15px;
+        border: 1px solid #ececec;
         .container-brand-info{
             height: 50px;
             width: 100%;
@@ -1088,16 +1168,87 @@ body{
         opacity: 1;
         position: absolute;
         width: 350px;
-        height: 240px;
+        height: auto;
         border: 1px solid rgb(255, 84, 130);
         left: -350px;
-        top:-98px;
+        bottom:-50px;
         background: #FFFFFF;
         .fixed-cart-center{
-            height: 160px;
+            max-height: 424px;
             width: 350px;
             .wrap{
+                height: 160px;
+//              display: none;
                 @include goods;
+            }
+            ul{
+                width: 100%;
+                max-height: 424px;
+                background: rgb(255, 255, 255);
+                overflow-y: hidden;
+                overflow: hidden;
+                li{
+                    display: list-item;
+                    padding: 12px;
+                    list-style: none;
+                    position: relative;
+                    overflow: hidden;
+                    height: 60px;
+                    border-bottom: none;
+                    a:nth-child(2){
+                        position: absolute;
+                        left: 0px;
+                        top: 15px;
+                        padding: 0px 10px 0px 80px;
+                        line-height: 1.2em;
+                        height: 30px;
+                        overflow: hidden;
+                        font-size: 13px;
+                        margin: 0px;
+                        width: 50%;
+                        z-index: 3;
+                    }
+                    img{
+                        border: 2px solid rgb(204, 204, 204);
+                        background: rgb(255, 255, 255);
+                        padding: 2px;
+                        width: 50px;
+                        height: 50px;
+                        position: relative;
+                        z-index: 4;
+                    }
+                    p:nth-child(3){
+                        position: absolute;
+                        color: rgb(170, 170, 170);
+                        left: 0px;
+                        top: 52px;
+                        padding: 0px 10px 0px 80px;
+                        line-height: 1.2em;
+                        height: 14px;
+                        overflow: hidden;
+                        font-size: 12px;
+                        margin: 0px;
+                        width: 50%;
+                    }
+                    p:nth-child(4){
+                        position: absolute;
+                        color: rgb(255, 84, 130);
+                        right: 15px;
+                        top: 25px;
+                        overflow: hidden;
+                        font-size: 16px;
+                        padding-left: 80px;
+                        margin: 0px;
+                        width: 30%;
+                        line-height: 1em;
+                        text-align: right;
+                        span{
+                            display: inline;
+                            color: rgb(136, 136, 136);
+                            font-size: 13px;
+                        }
+                    }
+                }
             }
         }
         .fixed-cart-bottom{
@@ -1117,6 +1268,7 @@ body{
                 }
             }
             button{
+                cursor: pointer;
                 @include btn;
                 i{
                     font-size: 16px;

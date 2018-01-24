@@ -9,7 +9,9 @@ requirejs.config({
 		"search":"scripts/search",
 		"scroll":"scripts/scroll",
 		"sidePanel":"scripts/sidePanel",
-		"brand":"scripts/brand"
+		"brand":"scripts/brand",
+		"pull":"scripts/pull",
+		"foodscar":"scripts/foodscar"
 		
 	}
 })

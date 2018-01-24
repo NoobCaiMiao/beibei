@@ -575,11 +575,35 @@ body {
                 height: 43px;
                 width: 208px;
                 background: url("http://b0.hucdn.com/img/tuan/i_map.png") no-repeat 0 0; }
+                .container .comwidth .time-line .po-re .now .shape-c .count-down .timer-pic span {
+                  line-height: 43px;
+                  color: #fff;
+                  font-weight: 700;
+                  font-size: 34px;
+                  width: 50px;
+                  display: inline-block;
+                  letter-spacing: 9px; }
+                .container .comwidth .time-line .po-re .now .shape-c .count-down .timer-pic .hours {
+                  margin-left: 7px; }
+                .container .comwidth .time-line .po-re .now .shape-c .count-down .timer-pic .minutes {
+                  margin-left: 18px; }
+                .container .comwidth .time-line .po-re .now .shape-c .count-down .timer-pic .seconds {
+                  margin-left: 19px;
+                  margin-right: -15px; }
           .container .comwidth .time-line .po-re .now .shape-r {
+            position: relative;
             width: 35px;
             height: 100%;
             margin-right: 122px;
             background: url("http://b0.hucdn.com/img/tuan/i_map.png") no-repeat -179px -60px; }
+            .container .comwidth .time-line .po-re .now .shape-r .fix-line {
+              position: absolute;
+              z-index: 3;
+              width: 100px;
+              height: 10px;
+              background: url("http://b0.hucdn.com/img/tuan/fix_line.png") repeat-x;
+              top: 33px;
+              left: 31px; }
         .container .comwidth .time-line .po-re .will {
           width: 233px;
           height: 100%;
