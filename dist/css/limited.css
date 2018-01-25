@@ -235,6 +235,71 @@ body {
             line-height: 160px;
             text-align: center;
             font-size: 16px; }
+          .head .comwidth .shoppingcar .shoppingsettle .cartop ul {
+            width: 100%;
+            max-height: 424px;
+            background: white;
+            overflow-y: hidden;
+            overflow: hidden; }
+            .head .comwidth .shoppingcar .shoppingsettle .cartop ul li {
+              display: list-item;
+              padding: 12px;
+              list-style: none;
+              position: relative;
+              overflow: hidden;
+              height: 60px;
+              border-bottom: none; }
+              .head .comwidth .shoppingcar .shoppingsettle .cartop ul li a:nth-child(1) {
+                padding: 0; }
+              .head .comwidth .shoppingcar .shoppingsettle .cartop ul li a:nth-child(2) {
+                position: absolute;
+                left: 0px;
+                top: 15px;
+                padding: 0px 10px 0px 80px;
+                line-height: 1.2em;
+                height: 30px;
+                overflow: hidden;
+                font-size: 13px;
+                margin: 0px;
+                width: 50%;
+                z-index: 3;
+                color: #000000; }
+              .head .comwidth .shoppingcar .shoppingsettle .cartop ul li img {
+                border: 2px solid #cccccc;
+                background: white;
+                padding: 2px;
+                width: 50px;
+                height: 50px;
+                position: relative;
+                z-index: 4; }
+              .head .comwidth .shoppingcar .shoppingsettle .cartop ul li p:nth-child(3) {
+                position: absolute;
+                color: #aaaaaa;
+                left: 0px;
+                top: 52px;
+                padding: 0px 10px 0px 80px;
+                line-height: 1.2em;
+                height: 14px;
+                overflow: hidden;
+                font-size: 12px;
+                margin: 0px;
+                width: 50%; }
+              .head .comwidth .shoppingcar .shoppingsettle .cartop ul li p:nth-child(4) {
+                position: absolute;
+                color: #ff5482;
+                right: 15px;
+                top: 25px;
+                overflow: hidden;
+                font-size: 16px;
+                padding-left: 80px;
+                margin: 0px;
+                width: 30%;
+                line-height: 1em;
+                text-align: right; }
+                .head .comwidth .shoppingcar .shoppingsettle .cartop ul li p:nth-child(4) span {
+                  display: inline;
+                  color: #888888;
+                  font-size: 13px; }
         .head .comwidth .shoppingcar .shoppingsettle .carbottom {
           height: 47px;
           border-top: 1px solid #e3e3e3;
@@ -966,6 +1031,71 @@ body {
         line-height: 160px;
         text-align: center;
         font-size: 16px; }
+      .side-panel .fixed-cart .fixed-cart-center ul {
+        width: 100%;
+        max-height: 424px;
+        background: white;
+        overflow-y: hidden;
+        overflow: hidden; }
+        .side-panel .fixed-cart .fixed-cart-center ul li {
+          display: list-item;
+          padding: 12px;
+          list-style: none;
+          position: relative;
+          overflow: hidden;
+          height: 60px;
+          border-bottom: none; }
+          .side-panel .fixed-cart .fixed-cart-center ul li a:nth-child(1) {
+            padding: 0; }
+          .side-panel .fixed-cart .fixed-cart-center ul li a:nth-child(2) {
+            position: absolute;
+            left: 0px;
+            top: 15px;
+            padding: 0px 10px 0px 80px;
+            line-height: 1.2em;
+            height: 30px;
+            overflow: hidden;
+            font-size: 13px;
+            margin: 0px;
+            width: 50%;
+            z-index: 3;
+            color: #000000; }
+          .side-panel .fixed-cart .fixed-cart-center ul li img {
+            border: 2px solid #cccccc;
+            background: white;
+            padding: 2px;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            z-index: 4; }
+          .side-panel .fixed-cart .fixed-cart-center ul li p:nth-child(3) {
+            position: absolute;
+            color: #aaaaaa;
+            left: 0px;
+            top: 52px;
+            padding: 0px 10px 0px 80px;
+            line-height: 1.2em;
+            height: 14px;
+            overflow: hidden;
+            font-size: 12px;
+            margin: 0px;
+            width: 50%; }
+          .side-panel .fixed-cart .fixed-cart-center ul li p:nth-child(4) {
+            position: absolute;
+            color: #ff5482;
+            right: 15px;
+            top: 25px;
+            overflow: hidden;
+            font-size: 16px;
+            padding-left: 80px;
+            margin: 0px;
+            width: 30%;
+            line-height: 1em;
+            text-align: right; }
+            .side-panel .fixed-cart .fixed-cart-center ul li p:nth-child(4) span {
+              display: inline;
+              color: #888888;
+              font-size: 13px; }
     .side-panel .fixed-cart .fixed-cart-bottom {
       height: 47px;
       border-top: 1px solid #e3e3e3;

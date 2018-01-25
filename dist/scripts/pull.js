@@ -41,7 +41,7 @@ define(["jquery"],function($){
 			$(res).each(function(index,item){
 //				console.log(index,item)
 				let box = $('<div class="container-box">'+
-					'<a href="">'+
+					'<a href="list.html">'+
 						'<div class="container-brand-info">'+
 							'<img src='+item.brandlogo+'>'+
 							'<div class="brand-name">'+

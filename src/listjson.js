@@ -12,7 +12,7 @@ define(["jquery"],function($){
 			$(res).each(function(index,item){
 //				console.log(index,item)
 				let $li = $('<li>'+
-					'<a href="">'+
+					'<a href="magnifier.html">'+
 						'<div class="img-wraper">'+
 							'<img src='+item.lazy+'>'+
 						'</div>'+

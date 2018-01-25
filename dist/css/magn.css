@@ -311,7 +311,7 @@ body {
             font-size: 13px;
             color: #666666;
             float: left; }
-            .head .comwidth .shoppingcar .shoppingsettle .carbottom .cartotle #cash {
+            .head .comwidth .shoppingcar .shoppingsettle .carbottom .cartotle .cash {
               font-size: 18px;
               color: #e53363;
               line-height: 27px; }
@@ -1876,7 +1876,7 @@ body {
         font-size: 13px;
         color: #666666;
         float: left; }
-        .side-panel .fixed-cart .fixed-cart-bottom .cartotle #cash {
+        .side-panel .fixed-cart .fixed-cart-bottom .cartotle .cash {
           font-size: 18px;
           color: #e53363;
           line-height: 27px; }

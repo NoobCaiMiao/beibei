@@ -1,5 +1,5 @@
 require(["scripts/detailsconfig.js"],function(){
-	require(["jquery","magn","map","verification","num","val","form","scroll","paging","over","overnav","overGoodsCarTop","tab","search","scroll","sidePanel","brand","foodscar"],function($,magn,map,ver,num,val,form,scroll,paging,over,overnav,overGoodsCarTop,tab,search,scroll,sidepanel,brand,foodscar){
+	require(["jquery","magn","map","verification","num","val","form","scroll","paging","over","overnav","overGoodsCarTop","tab","search","sidePanel","brand","foodscar"],function($,magn,map,ver,num,val,form,scroll,paging,over,overnav,overGoodsCarTop,tab,search,sidepanel,brand,foodscar){
 		magn.init();
 		map.init();
 		ver.init();
@@ -18,7 +18,7 @@ require(["scripts/detailsconfig.js"],function(){
 		.init($(".sex-age"),$(".sex-age-content"));
 		tab.init();
 		search.init();
-		scroll.init();
+//		scroll.init();
 		sidepanel.init();
 		brand.init();
 		foodscar.init()

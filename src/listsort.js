@@ -19,7 +19,7 @@ define(["jquery"],function($){
 			this.$list = $(".j-mart li")
 			this.$price = $(".price")
 			this.$pricet = $(".price-decimal")
-			console.log(this.$price,this.$pricet)
+//			console.log(this.$price,this.$pricet)
 			var _this = this
 			var arry = new Array()
 			this.$list.each(function(index,item){			//遍历商品列表
@@ -27,13 +27,13 @@ define(["jquery"],function($){
 //				console.log($(item).html())
 //				console.log(parseFloat(_this.$discount.eq(index).html()))
 				let dis = parseFloat(_this.$price.eq(index).html())+parseFloat(_this.$pricet.eq(index).html())
-				console.log(dis)
+//				console.log(dis)
 				arry[index] = [dis,$(item).html()]
 //				arry[index][1] = item.html()
 			})
 //			console.log(arry)
 			this.$arry = arry
-			console.log(arry)
+//			console.log(arry)
 			this.quickSort()
 		}
 		sort(event){

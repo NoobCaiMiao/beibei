@@ -15,6 +15,7 @@ define(["jquery"],function($){
 			
 		}
 		scroll(event){
+//			console.log(1)
 			var evt = event||window.event
 			this.scrollTop = document.documentElement.scrollTop||document.body.scrollTop
 			let eleTop = this.$bar.offset().top

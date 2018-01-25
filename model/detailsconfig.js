@@ -15,7 +15,7 @@ requirejs.config({
 		"overGoodsCarTop":"scripts/overGoodsCarTop",
 		"tab":"scripts/tab",
 		"search":"scripts/search",
-		"scroll":"scripts/scroll",
+//		"scroll":"scripts/scroll",
 		"sidePanel":"scripts/sidePanel",
 		"brand":"scripts/brand",
 		"foodscar":"scripts/foodscar"

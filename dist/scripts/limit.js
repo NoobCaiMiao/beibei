@@ -29,7 +29,7 @@ define(["jquery"],function($){
 				this.$waite1.html("21:00")
 				this.$waite2.html("09:00")
 				this.$clock.html("15:00")
-			}else if(h>=21||h<=9){
+			}else if(h>=21||h<9){
 				this.$pic.css({
 					backgroundPosition:"-164px -144px"
 				})
@@ -92,7 +92,7 @@ define(["jquery"],function($){
 				this.$hours.html(this.h)
 				this.$minutes.html(this.m)
 				this.$seconds.html(this.s)
-			}else if(this.h>=21||this.h<=9){
+			}else if(this.h>=21||this.h<9){
 				if(this.h>=21){
 					var num = this.h - 21
 				}else{
