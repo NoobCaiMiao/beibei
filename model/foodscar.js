@@ -11,12 +11,14 @@ define(["jquery","cookie"],function($){
 			this.$num = $("#counts")
 			this.$cash = $(".cash")
 			this.and = 0
+			this.$and = 0
+			this.$have = $(".fixed-cart-top span")
 //			console.log(this.$cash)
 //			console.log(JSON.parse($.cookie("goods")))
 			if($.cookie("goods")!=null){
 				this.$length = JSON.parse($.cookie("goods")).length
 //				console.log(this.$length)
-				this.$num.html(this.$length)
+//				this.$num.html(this.$length)
 				this.rendering()
 				this.$cash.html()
 			}
@@ -75,7 +77,9 @@ define(["jquery","cookie"],function($){
 //				$(".fixed-cart-center").append("<ul></ul>")
 //				$(res).each(function(index,item){
 	
-	
+					this.$and =parseInt(item.num) + this.$and
+					this.$num.html(this.$and)	
+					this.$have.html(`<span><i class="iconfont">&#xe672;</i>购物车中有${this.$and}件商品</span>`)		
 					this.and = item.price*item.num + this.and
 					$(".cash").html(this.and.toFixed(2))
 					
@@ -113,6 +117,9 @@ define(["jquery","cookie"],function($){
 			$(".fixed-cart-center").append("<ul></ul>")
 			$(res).each(function(index,item){
 				_this.and = item.price*item.num + _this.and
+				_this.$and =parseInt(item.num) + _this.$and
+				_this.$num.html(_this.$and)
+				_this.$have.html(`<span><i class="iconfont">&#xe672;</i>购物车中有${_this.$and}件商品</span>`)
 //				console.log(and.toFixed(2))
 				$(".cash").html(_this.and.toFixed(2))
 				var li = $(`<li>

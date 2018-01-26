@@ -1,4 +1,4 @@
-define(["jquery"],function($){
+define(["jquery","cookie"],function($){
 	class Form{
 		constructor(){}
 		init(){
@@ -33,6 +33,9 @@ define(["jquery"],function($){
 			this.$falseemail = $("#falseemail")
 			
 			this.$strong = $(".ver-member strong")
+			if($.cookie("cm")!=null){
+				this.haha()
+			}
 		}
 		boom(event){
 			let target = event.target || window.event.target
@@ -91,26 +94,7 @@ define(["jquery"],function($){
 							})
 						}else{
 							if(this.$inUval == 17343087569&&this.$inPval == 123456){
-								$(".wrap-currency").css({
-									display:"none"
-								})
-								$(".ver").css({
-									display:"none"
-								})
-								$(".view-buybar").css({
-									display:"none"
-								})
-								$(".view-buybars").css({
-									display:"block"
-								})
-								$(".view-ActionBack").eq(0).html("173****4308")
-								$(".view-ActionBack").eq(0).css({
-									color:"#ff5482"
-								})
-								$(".view-ActionBack").eq(1).html("[退出]")
-								$(".view-ActionBack").eq(1).css({
-									color:"#555"
-								})
+								this.haha()
 							}
 						}
 					}
@@ -152,6 +136,30 @@ define(["jquery"],function($){
 					}
 				}
 			}
+		}
+		haha(){
+			$.cookie("cm",`1`,{expires:1})
+			console.log(1)
+			$(".wrap-currency").css({
+				display:"none"
+			})
+			$(".ver").css({
+				display:"none"
+			})
+			$(".view-buybar").css({
+				display:"none"
+			})
+			$(".view-buybars").css({
+				display:"block"
+			})
+			$(".view-ActionBack").eq(0).html("173****4308")
+			$(".view-ActionBack").eq(0).css({
+				color:"#ff5482"
+			})
+			$(".view-ActionBack").eq(1).html("[退出]")
+			$(".view-ActionBack").eq(1).css({
+				color:"#555"
+			})
 		}
 	}
 	return new Form()

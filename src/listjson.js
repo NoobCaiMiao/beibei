@@ -37,7 +37,7 @@ define(["jquery"],function($){
 			let _this = this
 			setInterval(function(){
 				let datenow = new Date()
-				let datewill = new Date(2018,0,27)
+				let datewill = new Date(2018,1,5)
 				let seconds = datewill.getTime() - datenow.getTime()
 //				console.log(datenow,datewill)
 				_this.d = parseInt(seconds/(24*3600*1000)) 

@@ -11,7 +11,10 @@ requirejs.config({
 		"sidePanel":"scripts/sidePanel",
 		"brand":"scripts/brand",
 		"pull":"scripts/pull",
-		"foodscar":"scripts/foodscar"
+		"foodscar":"scripts/foodscar",
+		"verification":"scripts/verification",
+		"val":"scripts/validation",
+		"form":"scripts/form"
 		
 	}
 })

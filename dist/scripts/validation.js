@@ -2,12 +2,12 @@ define(["jquery"],function($){
 	class Validation{
 		constructor(){}
 		init(){
-			this.$li = $(".ver-tab li")
+			this.$li = $(".ver-tab li")      					//登录或者注册按钮
 			this.$li.on("click",$.proxy(this.addclass,this))
 			
 			this.$member = $(".logoin")
 			
-			this.$slider = $(".niz")
+			this.$slider = $(".niz")							//滑块
 			this.$slider.on("mousedown",$.proxy(this.move,this))
 			this.$bg = $(".left-bg")
 			$(".wrap-currency").bind("selectstart",function(){return false;});
@@ -27,21 +27,26 @@ define(["jquery"],function($){
 			})
 		}
 		move(event){
+			let cLeft = event.clientX
+			
 			this.$target = $(event.target)
+//			console.log(this.$target)
 			if(this.$bg.width()>100){
 //				console.log(this.$bg.width())
 				return;
 			}
 			this.$eleleft = $(event.target).offset().left
-			this.tLeft = event.offsetX	//鼠标按下时的相对位置
-			
+			this.tLeft = event.offsetX							//鼠标按下时的相对位置
+			this.eleL = cLeft - this.$eleleft-this.tLeft
+//			console.log(this.eleL)
 			$(document).on("mousemove",$.proxy(this.elemove,this))
 			$(document).on("mouseup",$.proxy(this.leave,this))
 		}
 		elemove(event){
-			let cLeft = event.clientX
+			let cLeft = event.clientX							//鼠标按下时的相对位置
 			this.eleL = cLeft - this.$eleleft-this.tLeft
-//			console.log(eleL)
+//			console.log(1)
+//			console.log(this.eleL)
 			
 			this.eleL = this.eleL <= 0 ? 0 : this.eleL;
 			this.eleL = this.eleL >= 257 ? 257 : this.eleL;
@@ -55,13 +60,14 @@ define(["jquery"],function($){
 		leave(){
 			$(document).off("mousemove")
 //			this.eleL = cLeft - this.$eleleft-this.tLeft
+//			console.log(1)
 			if(this.eleL < 257){
-				console.log(this.eleL)
-				this.$target.animate({
+//				console.log(this.eleL)
+				this.$target.stop().animate({
 					left:"0"
 				},500)
-				this.$target.prev().animate({
-					width:"0"
+				this.$target.prev().stop().animate({
+					width:"1",
 				},500)
 			}else{
 				this.$target.next().children().remove()
@@ -72,6 +78,7 @@ define(["jquery"],function($){
 //				console.log(this.eleL)
 				this.$target.html("")
 				this.$target.append('<b class="iconfont">'+'&#xe6ba;'+'</b>')
+				$(document).off("mouseup")
 			}
 			
 		}

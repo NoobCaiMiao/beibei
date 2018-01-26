@@ -16,6 +16,7 @@ define(["jquery"],function($){
 			this.$btn.on("click",$.proxy(this.signin,this))
 			this.$closesize.on("click",$.proxy(this.close,this))
 			this.$verc.on("click",$.proxy(this.closev,this))
+			$(".view-ActionBack").on("click",$.proxy(this.signin,this))
 		}
 		itemsize(){
 			this.$wrap.css({
