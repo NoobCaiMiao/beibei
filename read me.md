@@ -43,7 +43,7 @@ head购物车     已完成
 
 ###limited.html
 有个稍稍复杂的倒计时  已完成
-
+###yuerbao和merchant的特效也有
 Nginx   配置文件
 
 
